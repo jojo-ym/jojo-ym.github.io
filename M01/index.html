@@ -1,0 +1,215 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Story</title>
+    <link rel="icon" type="image/png" href="images/jo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <style>
+        img {
+            border-radius: 10px;
+        }
+    </style>
+</head>
+
+<body data-bs-theme="dark">
+    <div class="container-fluid p-0" style="position: relative; width: 100%; overflow: hidden;">
+        <div class="row">
+            <div class="col" style="height: 100vh;">
+                <iframe style="pointer-events: none; margin-left: 50%; transform: translateX(-50%);" width="100%"
+                    height="100%"
+                    src="https://www.youtube.com/embed/tA1nJpX8Wdw?autoplay=1&mute=1&controls=0&rel=0&disablekb=1&loop=1&cc_load_policy=1"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-auto">
+                <h1 class="display-3 text-center">
+                    <button type="button" onclick="expandContent()" class="btn btn-info" id="btnExpand">Plot of the
+                        Story
+                    </button>
+                </h1>
+            </div>
+        </div>
+    </div>
+
+    <div class="container" id="content" style="display: none;">
+        <div class="row justify-content-center">
+            <div class="col-8 p-5">
+                <figure class="text-center">
+                    <blockquote class="blockquote">
+                        <h1>Heneral Luna</h1>
+                    </blockquote>
+                    <figcaption class="blockquote-footer">
+                        Directed by: <cite title="Source Title">Jerrold Tarog</cite>
+                    </figcaption>
+                </figure>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-10 col-md-8 col-lg-8 p-5 mb-10">
+                <p class="plot" style="text-align: justify;">As the 19th century drew to a close, the Philippines stood
+                    on the brink of change. After centuries of
+                    colonial rule, Spain's power over the islands was finally fading. But instead of granting the
+                    Filipinos their hard-earned independence, Spain struck a secret deal. For a sum of $20,000,000, the
+                    Spanish agreed to sell the Philippines to a new foreign power—the United States. This agreement was
+                    sealed during the Treaty of Paris, though no one knew what this would mean for the Filipino people.
+                </p>
+                <img src="images/treaty of paris.png" width="100%"><hr><br>
+
+                <p class="plot" style="text-align: justify;">At the Barasoain Church in Malolos, tensions ran high.
+                    President Emilio Aguinaldo and his cabinet gathered to discuss the unsettling rise of American
+                    forces in the Philippines. Among the advisors, two members—Felipe Buencamino and Pedro Paterno—urged
+                    a diplomatic approach. They suggested forming an alliance with the Americans to avoid war. But their
+                    words struck a nerve in the room. Generals Antonio Luna and José Alejandrino, both staunch patriots,
+                    rejected the idea outright. To them, the Americans were no different from the Spanish colonizers
+                    they had just driven out. They were prepared to fight the new invaders to the end.
+                </p>
+                <img src="images/Barasoain.png" width="100%"><hr><br>
+
+                <p class="plot" style="text-align: justify;">Meanwhile, Aguinaldo was caught between diplomacy and
+                    defense. He tried to negotiate with the Americans over the control of Manila, which technically was
+                    still held by the Spanish. But soon, Aguinaldo learned a bitter truth: the Americans and Spaniards
+                    had staged a mock battle, with the Spaniards surrendering Manila to the Americans alone. The
+                    illusion of negotiation shattered, leaving Aguinaldo with no choice. With a heavy heart, he declared
+                    war, launching a resistance against the Americans to preserve the Philippines' newly proclaimed
+                    independence.
+                </p>
+                <img src="images/Americans taking Manila .png" width="100%"><hr><br>
+
+                <p class="plot" style="text-align: justify;">In the field, General Antonio Luna quickly became the face
+                    of the Filipino struggle. He was fearless, brilliant, and uncompromising. Alongside his trusted
+                    officers—Colonel Francisco “Paco” Román, Captain Eduardo Rusca, and the Bernal brothers—Luna led a
+                    fierce campaign against the American troops. But it wasn’t just the foreign enemies who threatened
+                    the fight for independence. Luna soon found betrayal and disobedience within his own ranks.
+                </p>
+                <img src="images/Kawit Battalion.png" width="100%"><hr><br>
+
+                <p class="plot" style="text-align: justify;">One day, during a critical battle, Luna called for
+                    reinforcements from the Kawit battalion. But their commander, Pedro Janolino, refused to comply,
+                    claiming the order hadn’t come directly from Aguinaldo. Luna was furious. He saw this as nothing
+                    less than treason. In front of everyone, he humiliated Janolino and stripped him of his rank. To
+                    stamp out any further insubordination, Luna issued his notorious "Article One"—a declaration that
+                    any soldier or officer refusing to obey his orders would be executed on the spot.
+                </p>
+                <img src="images/Article One.png" width="100%"><hr><br>
+
+                <p class="plot" style="text-align: justify;">But Luna’s enemies weren’t just soldiers defying orders.
+                    Within Aguinaldo’s government, Buencamino and Paterno continued pushing for peace with the
+                    Americans. They even proposed turning the Philippines into a protectorate under American rule.
+                    Furious, Luna had them both arrested, branding them traitors to the cause. His determination to keep
+                    the resistance alive became a driving force, but his strict methods and hot temper made him many
+                    enemies, even among his fellow generals.
+                </p>
+                <img src="images/Felipe Buencamino and Pedro Paterno.png" width="100%"><hr><br>
+
+                <p class="plot" style="text-align: justify;">One of these enemies was General Tomás Mascardo, who openly
+                    defied Luna’s orders. The lack of unity and loyalty within the Filipino forces caused the Americans
+                    to advance steadily. Forced to retreat, Aguinaldo and his army moved north, desperately trying to
+                    keep hope alive. But Luna, seeing the constant setbacks, grew disillusioned. He approached
+                    Aguinaldo, ready to resign from his position. Aguinaldo refused, urging Luna to continue the fight.
+                    However, he granted Luna’s request to establish a base in the north, where they could launch a
+                    guerrilla campaign against the Americans.
+                </p>
+                <img src="images/General Tomas Mascardo.png" width="100%"><hr><br>
+
+                <p class="plot" style="text-align: justify;">Then came a fateful day. Luna received an urgent summons
+                    from Aguinaldo’s headquarters in Cabanatuan. He was told that Aguinaldo had a position for him in
+                    the new cabinet. Despite the warning glances from his officers, Luna decided to go, bringing only
+                    Román and Rusca with him. But when they arrived, something felt wrong. Aguinaldo was nowhere to be
+                    seen. Only Buencamino, now a free man, awaited him.
+                </p>
+                <img src="images/Aguinaldo's Headquarters.png" width="100%"><hr><br>
+
+                <p class="plot" style="text-align: justify;">Luna confronted Buencamino, angered and suspicious. But
+                    before he could make sense of the situation, he was met by a group of soldiers led by Janolino.
+                    These men, once his subordinates, now looked at him with murder in their eyes. They attacked,
+                    brutally stabbing and hacking at Luna. Román fought to save him, but was killed in the attempt,
+                    while Rusca, gravely wounded, surrendered. Luna's lifeless body lay on the ground, a tragic end for
+                    one of the Philippines' fiercest defenders.
+                </p>
+                <img src="images/assassination of Antonio Luna.png" width="100%"><hr><br>
+
+                <p class="plot" style="text-align: justify;">In the days that followed, Aguinaldo made a show of
+                    ordering Luna and Román to be buried with full military honors. Yet the men who had killed them
+                    remained free, unpunished and unapologetic. Luna’s loyal officers were arrested, many tortured and
+                    killed, as the Filipino army continued to fracture under the weight of disunity and betrayal. Even
+                    the Bernal brothers, who had fought by Luna’s side, met cruel fates.<br><br>Years later, when asked
+                    about the incident, Aguinaldo denied any role in Luna’s assassination. He called Luna his most
+                    brilliant and capable general, though many suspected he was complicit in Luna’s death.
+                </p>
+                <img src="images/aftermath.png" width="100%"><hr><br>
+
+                <p class="plot" style="text-align: justify;">And so, as the years passed, General Antonio Luna’s memory
+                    lived on as a symbol of courage and sacrifice. In a final twist, the story leaves us with General
+                    Gregorio del Pilar, preparing to make a stand. With Luna’s remaining men by his side, he chose sixty
+                    of them to fight one last battle, knowing that the struggle for independence was far from over.
+                </p>
+                <img src="images/General Gregorio.png" width="100%"><br>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+
+
+    <script>
+        var display = "none";
+
+        function expandContent() {
+            var content = document.getElementById("content");
+            var btnExpand = document.getElementById("btnExpand");
+
+            if (display == "none") {
+                content.style.display = "block";
+                display = "block";
+                btnExpand.innerHTML = "See Less";
+            } else {
+                content.style.display = "none";
+                display = "none";
+                btnExpand.innerHTML = "Plot of the Story";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

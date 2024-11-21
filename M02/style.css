@@ -1,0 +1,11 @@
+/*PUT YOUR CUSTOM STYLE HERE*/
+body {
+    background: rgb(52, 128, 159);
+    background: linear-gradient(180deg, rgba(52, 128, 159, 1) 0%, rgba(45, 64, 121, 1) 44%, rgba(19, 20, 100, 1) 100%);
+}
+
+/*!This style is important, do not override!*/
+* {
+    margin: 0;
+    padding: 0;
+}

@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="parallax.css" />
+    <title>Ocean</title>
+    <link rel="icon" type="image/png" href="img/jo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+
+<body>
+    <section>
+        <div class="keyart" id="parallax">
+            <div class="keyart_layer parallax" id="keyart-0" data-speed="0"></div>
+            <div class="keyart_layer parallax" id="keyart-1" data-speed="29"></div>
+            <div class="keyart_layer parallax" id="keyart-2" data-speed="44"></div>
+            <div class="keyart_layer parallax" id="keyart-3" data-speed="37"></div>
+            <div class="keyart_layer parallax" id="keyart-4" data-speed="26"></div>
+            <div class="keyart_layer parallax" id="keyart-5" data-speed="36"></div>
+            <div class="keyart_layer parallax" id="keyart-6" data-speed="49"></div>
+            <div class="keyart_layer parallax" id="keyart-7" data-speed="69"></div>
+            <div class="keyart_layer parallax" id="keyart-9" data-speed="69"></div>
+            <div class="keyart_layer parallax" id="keyart-10" data-speed="59"></div>
+            <div class="keyart_layer parallax" id="keyart-11" data-speed="30"></div>
+            <div class="keyart_layer parallax" id="keyart-8" data-speed="50"></div>
+            <!--Front image, in sync with scroll, no need to parallax-->
+            <!--Add or Remove layers as needed - check Parallax.css for refrence-->
+        </div>
+    </section>
+
+    <section class="main-content">
+        <div style="height: 2300px;background-color:#131464">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col">
+                        <div class="h1"
+                            style="color: rgb(127, 229, 255); font-size: clamp(25px, 5vw, 50px); padding-top: 30px; padding-left: 20px;">
+                            What's in the Ocean?
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <div
+                                    style="color: rgb(203, 226, 247); font-size: clamp(12px, 2vw, 25px); font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; padding-top: 20px; padding-left: 10px;">
+                                    The ocean is a vast and diverse environment filled with living and non-living
+                                    components. It is home to countless living organisms, including tiny plankton,
+                                    colorful coral reefs, fish of all shapes and sizes, and marine mammals like dolphins
+                                    and whales. Non-living elements include saltwater, underwater mountains, deep
+                                    trenches, and hydrothermal vents. It also contains dissolved minerals, gases like
+                                    oxygen and carbon dioxide, and human-made items like shipwrecks and plastic debris.
+                                    The ocean plays a critical role in supporting life on Earth by regulating climate,
+                                    producing oxygen, and providing food and resources.
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <img src="img/ocean.png" alt="Ocean Image"
+                                    style="width: 100%; padding-top: 20px; margin-left: 10px;">
+                            </div>
+                        </div>
+                        <div class="h1"
+                            style="color: rgb(127, 229, 255); font-size: clamp(20px, 5vw, 40px); padding-top: 30px; margin-bottom: 20px; text-align: center; margin-top: 70px;">
+                            Living Organisms
+                        </div>
+                        <div id="carouselExampleCaptions" class="carousel slide">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                                    aria-label="Slide 4"></button>
+                                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                                    aria-label="Slide 5"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="img/microorganism.png" class="d-block mx-auto" width="70%"
+                                        alt="Microorganisms">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Microorganisms</h5>
+                                        <p>Microorganisms in the ocean, including bacteria, algae, and plankton, are
+                                            essential for the food chain, oxygen production, and nutrient cycling,
+                                            supporting marine ecosystem balance.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/marine plants.png" class="d-block mx-auto" width="70%"
+                                        alt="Marine Plants">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Marine Plants</h5>
+                                        <p>Marine plants, including seaweed, seagrasses, and mangroves, provide food,
+                                            shelter, and oxygen for marine life, while also helping stabilize coastlines
+                                            and absorb carbon dioxide.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/invertebrates.png" class="d-block mx-auto" width="70%"
+                                        alt="Invertebrates">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Invertebrates</h5>
+                                        <p>Invertebrates are animals without a backbone, such as jellyfish, crabs, and
+                                            octopuses, and play essential roles in marine ecosystems by contributing to
+                                            food webs and nutrient cycling.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/fish.png" class="d-block mx-auto" width="70%" alt="Fish">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Fishes</h5>
+                                        <p>Fish in the ocean are diverse aquatic vertebrates that play crucial roles in
+                                            marine ecosystems, serving as both predators and prey while contributing to
+                                            nutrient cycling and maintaining the balance of ocean life.</p>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/dolphin.png" class="d-block mx-auto" width="70%" alt="Dolphin">
+                                    <div class="carousel-caption d-none d-md-block">
+                                        <h5>Marine Mammals</h5>
+                                        <p>Marine mammals, such as whales, dolphins, and seals, are warm-blooded animals
+                                            that rely on the ocean for food and habitat, playing vital roles in marine
+                                            ecosystems.</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <div class="h1"
+                            style="color: rgb(127, 229, 255); font-size: clamp(20px, 5vw, 40px); padding-top: 30px; margin-bottom: 20px; text-align: center; margin-top: 70px;">
+                            Non-Living Organisms
+                        </div>
+                        <div id="carouselExampleIndicators" class="carousel slide">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                                    class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                                    aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                                    aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="img/mountain.png" class="d-block mx-auto" width="80%" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/trench.png" class="d-block mx-auto" width="80%" alt="...">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="img/hydrothermal.png" class="d-block mx-auto" width="80%" alt="...">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button"
+                                data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button"
+                                data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div style="padding-top: 100px;">
+                <img src="img/footer.png" class="d-block mx-auto" width="60%" alt="">
+            </div>
+        </div>
+    </section>
+
+    <!--Uses JQuery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script type="text/javascript" src="js/parallax.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
