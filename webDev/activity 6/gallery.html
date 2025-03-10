@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gallery</title>
+  <link rel="icon" type="image/png" href="jo.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <style>
+    body {
+      color: rgb(198, 200, 203);
+      background-color: rgb(23, 22, 22);
+    }
+
+
+    [data-bs-theme="light"] {
+      --bs-body-color: rgb(23, 22, 22);
+      --bs-body-color-rgb: rgb(198, 200, 203);
+    }
+
+
+    h6 {
+      text-align: center;
+      padding-bottom: 10px;
+    }
+
+    #navbar-example2 {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+      z-index: 1030;
+      background-color: rgb(23, 22, 22);
+    }
+
+
+    a{
+      margin-right: 30px;
+      text-decoration: none;
+      color:rgb(198, 200, 203)
+    }
+
+
+    a:hover{
+      color: blue;
+      font-size: 15px 
+    }    
+  </style>
+</head>
+
+<body id="body" data-bs-theme="light">
+  <nav class="navbar navbar-expand-lg bg-body-tertiary shadow">
+    <div class="container-fluid">
+      <img src="Gallery Icon.png" alt="Logo" width="43px" class="d-inline-block align-text-top"> 
+      <div class="navbar-brand" href="#">GALLERY</div>
+      <button class="btn btn-outline-secondary ms-auto" onclick="changeMode()" type="submit">Mode</button>
+    </div>
+  </nav>
+  <br><br><br>
+  <img src="camera.png" class="rounded mx-auto d-block" alt="Camera" width="80px">
+  <h3 style="font-family: Arial, Helvetica, sans-serif; font-size: 30px; font-weight: bold; text-align: center;">Photos
+  </h3>
+  <h6>20 images</h6><br><br>
+
+
+
+  <!-- To create card -->
+  <nav id="navbar-example2" class="navbar px-3 mb-2">
+    <a class="navbar-brand" href="#"
+      style="color: rgb(218, 222, 226); font-size: 35px; font-family: Arial, Helvetica, sans-serif; font-weight: bold;"></a>
+    <ul class="nav nav-pills">
+      <li class="nav-item">
+        <a class="nav-link" href="#scrollspyNow">Now</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#scrollspyYesterday">Yesterday</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+          aria-expanded="false">Memories</a>
+        <ul class="dropdown-menu">
+          <li><a class="dropdown-item" href="#scrollspyLastWeek">Last Week</a></li>
+          <li><a class="dropdown-item" href="#scrollspyLastMonth">Last Month</a></li>
+          <li>
+            <hr class="dropdown-divider">
+          </li>
+          <li><a class="dropdown-item" href="#scrollspyYearsAgo">Years Ago</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+  <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-root-margin="0px 0px -40%"
+    data-bs-smooth-scroll="true" class="scrollspy-example p-3" tabindex="0">
+    <h4 id="scrollspyNow">Now</h4>
+    <div class="row" id="cardContainerNow"></div><br><br>
+
+    <h4 id="scrollspyYesterday">Yesterday</h4>
+    <div class="row" id="cardContainerYD"></div><br><br>
+
+    <h4 id="scrollspyLastWeek">Last Week</h4>
+    <div class="row" id="cardContainerLW"></div><br><br>
+
+    <h4 id="scrollspyLastMonth">Last Month</h4>
+    <div class="row" id="cardContainerLM"></div><br><br>
+
+    <h4 id="scrollspyYearsAgo">Years Ago</h4>
+    <div class="row" id="cardContainerYA"></div><br><br>
+  </div>
+
+
+  <div class="container">
+    <div class="row mt-5 justify-content-center">
+      <div class="col-auto">
+        <h1 class="display-3 text-center">
+          <button type="button" onclick="expandContent()" class="btn btn-outline-secondary" id="btnExpand">See
+            More</button>
+            <a class="btn btn-secondary" href="../index.html" type="button" style="width: 50%; margin: auto;">Back</a>
+        </h1>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-fluid" id="footer" style="display: none;">
+    <div class="row justify-content-center">
+      <div class="col-auto p-5">
+        <a href="https://www.facebook.com" target="_blank">
+          Facebook
+        </a>
+        <a href="https://www.instagram.com" target="_blank">
+          Instagram
+        </a>
+        <a href="https://www.pinterest.com/#top" target="_blank">
+          Pinterest
+        </a>
+        <a href="https://jojo-ym.github.io/" target="_blank">
+          Github
+          <br><br><br><br>
+        </a>
+      </div>
+    </div>
+  </div>
+
+
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+  integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+  integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+<script>
+  var namesNow = ["Mountain", "Sunrise"];
+  var picsNow = ["6.jpg", "7.jpg"];
+  var dateNow = ["10-18-24", "10-18-2024"]
+
+  for (var i = 0; i < namesNow.length; i++) {
+    var myContainer = document.getElementById("cardContainerNow");
+    myContainer.innerHTML += "<div class=\"col-xl-3 col-md-4 col-sm-6 col-12\"><div class=\"card my-3\" id=\"now" + i +
+      "\" onmouseenter=\"addShadow('now" + i + "')\" onmouseleave=\"removeShadow('now" + i + "')\"><img src=\"pictures/" + picsNow[i] +
+      "\" class=\"card-img-top\"><div class=\"card-body\"><h5 class=\"card-title\">" + namesNow[i] +
+      "</h5><p class=\"card-text\">" + dateNow[i] + "</p></div></div></div>";
+  }
+
+  var namesYD = ["Jordan 1"];
+  var picsYD = ["4.jpg"];
+  var dateYD = ["10-17-24"]
+
+  for (var i = 0; i < namesYD.length; i++) {
+    var myContainer = document.getElementById("cardContainerYD");
+    myContainer.innerHTML += "<div class=\"col-xl-3 col-md-4 col-sm-6 col-12\"><div class=\"card my-3\" id=\"yd" + i +
+      "\" onmouseenter=\"addShadow('yd" + i + "')\" onmouseleave=\"removeShadow('yd" + i + "')\"><img src=\"pictures/" + picsYD[i] +
+      "\" class=\"card-img-top\"><div class=\"card-body\"><h5 class=\"card-title\">" + namesYD[i] + 
+      "</h5><p class=\"card-text\">" + dateYD +"</p></div></div></div>";
+  }
+
+  var namesLW = ["Leopard", "Elephant", "Zebra"];
+  var picsLW = ["2.jpg", "5.jpg", "19.jpg"];
+  var dateLW = ["10-11-24", "10-11-24", "10-10-24"]
+
+  for (var i = 0; i < namesLW.length; i++) {
+    var myContainer = document.getElementById("cardContainerLW");
+    myContainer.innerHTML += "<div class=\"col-xl-3 col-md-4 col-sm-6 col-12\"><div class=\"card my-3\" id=\"lw" + i +
+      "\" onmouseenter=\"addShadow('lw" + i + "')\" onmouseleave=\"removeShadow('lw" + i + "')\"><img src=\"pictures/" + picsLW[i] +
+      "\" class=\"card-img-top\"><div class=\"card-body\"><h5 class=\"card-title\">" + namesLW[i] + 
+      "</h5><p class=\"card-text\">" + dateLW[i] + "</p></div></div></div>";
+  }
+
+  var namesLM = ["Motor", "BMW I8", "Kitchen", "Living", "House"];
+  var picsLM = ["8.jpg", "3.jpg", "14.jpg", "12.jpg", "11.jpg", "13.jpg"];
+  var dateLM = ["09-23-24", "09-18-24", "08-10-24", "08-10-24", "07-25-24"]
+
+  for (var i = 0; i < namesLM.length; i++) {
+    var myContainer = document.getElementById("cardContainerLM");
+    myContainer.innerHTML += "<div class=\"col-xl-3 col-md-4 col-sm-6 col-12\"><div class=\"card my-3\" id=\"lm" + i +
+      "\" onmouseenter=\"addShadow('lm" + i + "')\" onmouseleave=\"removeShadow('lm" + i + "')\"><img src=\"pictures/" + picsLM[i] +
+      "\" class=\"card-img-top\"><div class=\"card-body\"><h5 class=\"card-title\">" + namesLM[i] + 
+      "</h5><p class=\"card-text\">" + dateLM[i] + "</p></div></div></div>";
+  }
+
+  var namesYA = ["Museum Part 1", "Museum Part 2", "Museum Part 3", "Museum Part 4", "Street", "Store", "Inside", "Outside"];
+  var picsYA = ["15.jpg", "16.jpg", "17.jpg", "18.jpg", "9.jpg", "10.jpg", "20.jpg", "21.jpg"];
+  var dateYA = ["2023", "2023", "2023", "2023", "2022", "2022", "2021", "2020"];
+
+  for (var i = 0; i < namesYA.length; i++) {
+    var myContainer = document.getElementById("cardContainerYA");
+    myContainer.innerHTML += "<div class=\"col-xl-3 col-md-4 col-sm-6 col-12\"><div class=\"card my-3\" id=\"ya" + i +
+      "\" onmouseenter=\"addShadow('ya" + i + "')\" onmouseleave=\"removeShadow('ya" + i + "')\"><img src=\"pictures/" + picsYA[i] +
+      "\" class=\"card-img-top\"><div class=\"card-body\"><h5 class=\"card-title\">" + namesYA[i] + 
+      "</h5><p class=\"card-text\">" + dateYA[i] + "</p></div></div></div>";
+  }
+
+
+  // Hover
+  function addShadow(id) {
+    var element = document.getElementById(id);
+        element.style.transform = "scale(1.06)";
+        element.style.transition = "transform 0.3s";
+  }
+
+
+  function removeShadow(id) {
+    var element = document.getElementById(id);
+        element.style.transform = "scale(1)";
+  }
+
+
+  var display = "none";
+
+  function expandContent() {
+    var footer = document.getElementById("footer");
+    var btnExpand = document.getElementById("btnExpand");
+
+    if (display == "none") {
+      footer.style.display = "block";
+      display = "block";
+      btnExpand.innerHTML = "See Less";
+    } else {
+      footer.style.display = "none";
+      display = "none";
+      btnExpand.innerHTML = "See More";
+    }
+  }
+
+
+  var colorMode = "light";
+  function changeMode() {
+    var bodyElement = document.getElementById("body");
+    colorMode = colorMode == "light" ? "dark" : "light";
+    bodyElement.setAttribute("data-bs-theme", colorMode);
+  }
+</script>
+
+</html>
