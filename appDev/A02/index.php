@@ -160,11 +160,6 @@ if (isset($_GET['page'])) {
                                     <div class="col-8">
                                         <div class="card-body">
                                             <h6 class="card-title">Parker</h6>
-
-                                            <p class="card-text">Parker (2013) is a crime thriller about a professional
-                                                thief who seeks
-                                                revenge on his double-crossing crew while teaming up with a real estate
-                                                agent to recover stolen jewels.</p>
                                             <p class="card-text"><small class="text-body-secondary">2013 ‧ Action/Crime
                                                 </small></p>
                                         </div>
@@ -179,9 +174,6 @@ if (isset($_GET['page'])) {
                                     <div class="col-8">
                                         <div class="card-body">
                                             <h6 class="card-title">The Ghost</h6>
-                                            <p class="card-text">The Ghost (2022) is an action thriller about a former
-                                                agent who uses his lethal skills to protect his sister and niece from
-                                                dangerous kidnappers and rivals.</p>
                                             <p class="card-text"><small class="text-body-secondary">2011 ‧
                                                     Horror/Thriller</small></p>
                                         </div>
@@ -196,10 +188,6 @@ if (isset($_GET['page'])) {
                                     <div class="col-8">
                                         <div class="card-body">
                                             <h6 class="card-title">Asphalt Legends</h6>
-                                            <p class="card-text">Asphalt Legends Unite is a high-octane racing game
-                                                that brings together players across multiple platforms for thrilling
-                                                arcade races featuring over 250 hypercars from renowned manufacturers
-                                                like Ferrari and Porsche.</p>
                                             <p class="card-text"><small class="text-body-secondary">2013 ‧ Racing/Single
                                                     Player</small></p>
                                         </div>
@@ -214,9 +202,6 @@ if (isset($_GET['page'])) {
                                     <div class="col-8">
                                         <div class="card-body">
                                             <h6 class="card-title">A Storm of Shadow and Pearls </h6>
-                                            <p class="card-text">A Storm of Shadows and Pearls is the second
-                                                installment in Marion Blackwood's The Oncoming Storm series, following
-                                                the adventures of a witty thief known as the Oncoming Storm.</p>
                                             <p class="card-text"><small class="text-body-secondary">2008 ‧
                                                     Action/Crime</small></p>
                                         </div>
@@ -231,9 +216,6 @@ if (isset($_GET['page'])) {
                                     <div class="col-8">
                                         <div class="card-body">
                                             <h6 class="card-title">Haunted Forest</h6>
-                                            <p class="card-text">An American horror film directed by Mauro Borrelli,
-                                                where a group of friends ventures into a forest to investigate the
-                                                legend of Satinka, a vengeful spirit.</p>
                                             <p class="card-text"><small class="text-body-secondary">2006 ‧
                                                     Horror/Crime</small></p>
                                         </div>
