@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nike Footwear</title>
+    <link rel="icon" type="image/png" href="image/nLogo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        .custom-button {
+            width: 300px;
+        }
+
+        .custom-button-categ {
+            width: 200px !important;
+        }
+
+        .card {
+            box-shadow: 2px;
+            border-style: none;
+        }
+
+        .total,
+        .totalValue,
+        .receiptCode,
+        .receiptPrice,
+        .receiptAddress,
+        .receiptTell {
+            font-family: "IBM Plex Mono", monospace;
+            font-weight: 200;
+            font-style: normal;
+        }
+
+        .navLogo,
+        .brandNameReceipt {
+            font-family: "Oswald", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        .contentName,
+        .contentPrice,
+        .categoryName {
+            font-family: "Roboto", sans-serif;
+            font-optical-sizing: auto;
+            font-weight: 200;
+            font-style: normal;
+            font-variation-settings:
+                "wdth" 100;
+        }
+    </style>
+</head>
+
+<body data-bs-theme="dark">
+    <nav class="navbar bg-body-tertiary">
+        <div class="container-fluid" style="background-color: dark;">
+            <a class="navbar-brand" href="#" style="font-family: 'Oswald', sans-serif; font-optical-sizing: auto;
+                    font-weight: 700; font-style: normal;">
+                <img src="image/nLogo.png" alt="Logo" width="30" height="30"
+                    class=" navLogo d-inline-block align-text-top">
+                Footwear
+            </a>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="row pt-2">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-9">
+                <div class="row">
+                    <div class="col pb-2 px-2">
+                        <div class="card shadow-sm categoryContainer d-flex justify-content-center"
+                            style="height: 90px; scrollbar-width: thin; overflow-x: auto; background-color: dark; white-space: nowrap;">
+                            <div class="d-flex flex-start flex-row categories" id="categories"
+                                style="min-width: max-content;">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col px-2">
+                        <div class="card shadow-sm productContainer"
+                            style="height: 77.5vh; scrollbar-width: thin; overflow-x: scroll;">
+                            <div class="d-flex flex-row flex-wrap justify-content-evenly" id="productContainer">
+                                <img src="image/nikeBanner.jpg" alt=""
+                                    style="opacity: 100%; border-radius: 10px; width: 100%; height: 76vh;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-sm-12 col-md-12 col-lg-3 px-2">
+                <div class="card shadow"
+                    style="height: 90vh; scrollbar-width: thin; overflow-x: scroll; background-color: rgb(249, 246, 246);">
+                    <div class="brandNameReceipt card text-center pt-4 pb-4 mb-2 sticky-top"
+                        style="font-size: 25px; background-color: rgb(249, 246, 246); font-weight: 700; border-bottom: 1px dashed rgb(168, 167, 167); color: rgb(8, 8,8)">
+                        Nike Footwear
+                    </div>
+                    <div class="small receiptAddress ps-4 pt-1 pb-2"
+                        style="color: rgb(8,8,8); border-bottom: 1px dashed rgb(168, 167, 167); font-size: 12px;">
+                        Address: 123 Lorem,
+                        Ipsum</div>
+                    <div class="small receiptTell ps-4 pt-2 pb-2 mb-2"
+                        style="color: rgb(8,8,8); border-bottom: 1px dashed rgb(168, 167, 167); font-size: 12px;">Tell:
+                        244-676-8935
+                    </div>
+                    <div id="receipt">
+                    </div>
+                    <div class="card mb-4 mx-2 px-4 py-2 d-flex flex-row justify-content-between sticky-bottom"
+                        style="background-color: dark; height: 50px; margin-top: 530px; position: sticky;">
+                        <div class="total pt-1" style="font-size: 17px; color: rgb(249, 246, 246)"><b>TOTAL</b></div>
+                        <div class="totalValue pt-1" style="color: rgb(249, 246, 246)"><b id="totalValue">PHP 0</b>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="product.js"></script>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.min.js"
+        integrity="sha384-VQqxDN0EQCkWoxt/0vsQvZswzTHUVOImccYmSyhJTp7kGtPed0Qcx8rK9h9YEgx+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
