@@ -48,7 +48,7 @@ var products = [
                 "isAvailable": true,
                 "name": "Nike T90 SP",
                 "code": "T90SP",
-                "image": "T90Sp",
+                "image": "T90SP",
                 "price": 6295
             },
             {
