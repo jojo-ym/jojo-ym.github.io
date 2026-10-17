@@ -32,7 +32,7 @@ img {
 
 .fa {
   display: inline-block;
-  font-size: 13px;
+  font-size: 14px;
 }
 
 .email a {
@@ -40,9 +40,14 @@ img {
   color: #DEE2E6;
 }
 
-.email,
+.contact,
 .location {
   font-size: 13px;
+}
+
+
+.fe-desc, .be-desc {
+  font-size: 14px;
 }
 
 
