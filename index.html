@@ -1,159 +1,102 @@
 <!doctype html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Main Page</title>
-    <link rel="icon" type="image/png" href="webDev/img/jo.png">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: Verdana, Geneva, Tahoma, sans-serif;
-            color: rgb(20, 21, 23);
-            background-size: cover;
-            min-height: 100vh;
-            padding: 25px;
-            display: flex;
-            align-items: center;
-            background-color: rgb(227, 224, 227);
-        }
-
-        .projects{
-            margin-top: 50px;
-            justify-content: left;
-            font-size: clamp(.63rem, 1.5vw, 2rem);
-        }
-
-        .buttonContainer {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: left;
-            gap: 30px;
-            margin-top: 30px;
-        }
-
-        .buttonContainer button {
-            padding: 10px 20px;
-            font-size: 16px;
-            background-color: rgb(23, 20, 23);
-            color: rgb(227, 224, 227);
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: transform 0.2s, background-color 0.3s ease;
-            max-width: 150px;
-        }
-
-        .buttonContainer button:hover {
-            background-color: rgb(95, 94, 95);
-            color: rgb(208, 205, 208);
-            transform: scale(1.05);
-        }
-
-
-
-
-        @media (max-width: 768px) {
-            .buttonContainer button {
-                font-size: 14px;
-            }
-
-            .projects{
-                justify-content: center;
-            }
-        }
-
-        @media (max-width: 576px) {
-            .buttonContainer {
-                align-items: center;
-                justify-content: center;
-            }
-
-            .buttonContainer button {
-                width: 100%;
-                max-width: 100px;
-                font-size: 12px;
-                align-items: center;
-            }
-
-            img {
-                width: 20px;
-            }
-        }
-
-
-    </style>
-</head>
-
-<body>
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col">
-                <div class="h2">Coming Soon!</div>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bootstrap demo</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-B/GM4XqrwHnWXNOWMbloTmrYXZg10cakYGmpfsR/bbzQ6JAJI4ihuyADKLnBgrCe"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body data-bs-theme="dark">
+    <div class="container my-12">
+      <div class="row justify-content-center">
+        <div class="lg:col-7 md:col-12 sm:col-12" style="width: 700px">
+          <div class="row rounded-5 border border-2 border-secondary">
+            <div
+              class="col-4 py-4 ps-4 pe-2 d-flex align-items-center justify-content-center"
+            >
+              <div
+                class="img-holder p-4 rounded-5 border border-2 border-secondary"
+              >
+                <img src="image/grad_pic_vert.png" width="100%" alt="" />
+              </div>
             </div>
-        </div>
+            <div
+              class="col-8 py-4 ps-2 pe-4 align-items-center">
+              <div class="row px-4">
+                <div
+                  class="col name-holder px-8 py-4 rounded-5 border border-2 border-secondary">
+                  <div class="h1 full-name mb-3">JOSHUA MALABANAN</div>
+                  <div class="description">
+                    <p>
+                      I'm a full-stack engineer. I build modern web and mobile
+                      apps, and these days I'm focused on generative AI.
+                    </p>
+                  </div>
+                  <div class="social-links">
+                    <a href="https://github.com/jojo-ym">github ↗</a>
+                    <a
+                      href="https://www.linkedin.com/in/joshua-malabanan-2872253a4"
+                      >linkedin ↗</a>
+                    <a href="https://github.com/jojo-ym">gmail ↗</a>
+                    <a href="https://www.instagram.com/jujo.ym/" style="margin-right: 0px;">instagram ↗</a>
+                  </div>
+                </div>
 
-        <!-- <div class="row"> -->
-            <!-- <div class="col"> -->
-                <!-- <div class="h4" style="text-align: start; font-size: clamp(1rem, 2vw, 3rem);">
-                    Hi, I'm
-                </div>
-                <div class="h1" style="text-align: start; font-size: clamp(1.7rem, 4vw, 5rem); font-weight: bold;">
-                    Joshua
-                </div>
-                <div class="h1" style="text-align: start; font-size: clamp(1.7rem, 4vw, 5rem); font-weight: bold;">
-                    Malabanan
-                </div>
-                <div class="h5" style="text-align: start; font-size: clamp(.63rem, 1.5vw, 2rem); margin-bottom: 30px;">
-                    A third-year college student pursuing a Bachelor of Science in Information Technology.
-                </div>
-                <div class="h5" style="text-align: start; font-size: clamp(.60rem, 1.3vw, 2rem); margin-bottom: 10px;">
-                    Find me on:
-                </div>
-                <div class="imgContainer">
-                    <img src="webDev/img/fb.png" width="3%" alt="">
-                    <img src="webDev/img/github.png" width="3%">
-                    <img src="webDev/img/ig.png" width="3%" alt="">
-                </div> -->
-            <!-- </div>
-        </div>
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col">
-                    <div class="projects">
-                        My Projects: 
+                <div
+                  class="col rounded-5 border border-2 border-secondary px-4 py-3 mt-3 d-none 2xl:d-block xl:d-block lg:d-block md:d-block">
+                  <div class="contact-container d-flex flex-row">
+                    <div class="email me-8 mb-0">
+                      <i class="fa fa-envelope me-1" aria-hidden="true"></i>
+                      <a href="mailto:joshuamalabanan0829@gmail.com"
+                        >joshuamalabanan0829@gmail.com</a
+                      >
                     </div>
-                    <div class="buttonContainer">
-                        <button type="button" onclick="window.location.href='webDev/index.html'">Web Dev
-                        </button>
-                        <button type="button" onclick="window.location.href='appDev/index.html'">App Dev
-                        </button>
+                    <div class="location mb-0">
+                      <i class="fa fa-map-marker me-1" aria-hidden="true"></i>
+                      Batangas, PH
                     </div>
+                  </div>
                 </div>
+              </div>
             </div>
-        </div> -->
+          </div>
+        </div>
+      </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
-        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
-        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
-        crossorigin="anonymous"></script>
-</body>
-
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.min.js"
+      integrity="sha384-BJf/nQgxZJU68GxBse97Vdlc8Rh+z9PzzXiS3/BjV+1nQPR7IKn+iJnD3DJvCMaU"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-1a/pXj49ZQ1aHEmrJ+gMw1otqoVsYwlEnlD8mIfY2TV03r20Y0CN7uqx1tQogjPL"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
-
-<body>

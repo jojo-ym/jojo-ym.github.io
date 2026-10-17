@@ -1,0 +1,92 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #DEE2E6;
+}
+
+img {
+  border-radius: 4px;
+}
+
+.full-name {
+  font-family: "Bebas Neue", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.description p {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.social-links {
+    margin-top: 22px;
+}
+
+.social-links a {
+  margin-right: 24px;
+  color: #888888;
+  text-decoration: none;
+  font-size: 13px;
+}
+
+.fa {
+  display: inline-block;
+  font-size: 13px;
+}
+
+.email a {
+  text-decoration: underline;
+  color: #DEE2E6;
+}
+
+.email,
+.location {
+  font-size: 13px;
+}
+
+
+
+@media (max-width: 767.98px) {
+  .row {
+    border: none;
+  }
+
+
+  img {
+  max-height: 130px;
+}
+
+
+  .img-holder {
+    padding: 0px;
+    border: none;
+  }
+
+
+  .name-holder {
+    padding: 0px;
+    border: none;
+  }
+
+
+  .full-name {
+    font-size: 24px;
+  }
+
+
+  .description p {
+    font-size: 12px;
+}
+
+
+.social-links a {
+  margin-right: 4px;
+  font-size: 10px;
+}
+
+
+.social-links {
+    margin-top: 12px;
+}
+}

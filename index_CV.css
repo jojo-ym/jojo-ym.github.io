@@ -1,0 +1,10 @@
+@media (max-width: 768px) {
+
+    .position-mobile{
+        width: fit-content;
+    }
+
+  .email{
+    font-size: 13px !important;
+  }
+}

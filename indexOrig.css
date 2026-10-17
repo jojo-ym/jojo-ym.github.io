@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: rgb(20, 21, 23);
+  background-size: cover;
+  min-height: 100vh;
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  background-color: rgb(227, 224, 227);
+}
+
+.projects {
+  margin-top: 50px;
+  justify-content: left;
+  font-size: clamp(0.63rem, 1.5vw, 2rem);
+}
+
+.buttonContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: left;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.buttonContainer button {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: rgb(23, 20, 23);
+  color: rgb(227, 224, 227);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition:
+    transform 0.2s,
+    background-color 0.3s ease;
+  max-width: 150px;
+}
+
+.buttonContainer button:hover {
+  background-color: rgb(95, 94, 95);
+  color: rgb(208, 205, 208);
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .buttonContainer button {
+    font-size: 14px;
+  }
+
+  .projects {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .buttonContainer {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .buttonContainer button {
+    width: 100%;
+    max-width: 100px;
+    font-size: 12px;
+    align-items: center;
+  }
+
+  img {
+    width: 20px;
+  }
+}
