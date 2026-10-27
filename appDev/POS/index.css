@@ -1,0 +1,41 @@
+.custom-button {
+  width: 320px;
+}
+
+.custom-button-categ {
+  width: 200px !important;
+}
+
+.card {
+  box-shadow: 2px;
+  border-style: none;
+}
+
+.total,
+.totalValue,
+.receiptCode,
+.receiptPrice,
+.receiptAddress,
+.receiptTell {
+  font-family: "IBM Plex Mono", monospace;
+  font-weight: 200;
+  font-style: normal;
+}
+
+.navLogo,
+.brandNameReceipt {
+  font-family: "Oswald", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.contentName,
+.contentPrice,
+.categoryName {
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 200;
+  font-style: normal;
+  font-variation-settings: "wdth" 100;
+}
