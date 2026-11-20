@@ -15,7 +15,7 @@ function renderContents(containerId, data) {
     container.innerHTML += `
         <div class="col-12 lg:col-6 md:col-6 sm:col-12 px-2 py-4">
             <div class="card h-100">
-                <img src="${item.image}" class="card-img-top" alt="...">
+                <img src="${item.image}" class="card-img-top" alt="..." style="border-radius: 12px 12px 0px 0px">
              <div class="card-body">
                  <h4 class="card-title">${item.title}</h4>
                   <p class="card-text fg-secondary" style="font-size: 14px">${item.description}</p>
